@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -21,10 +20,9 @@ void more_numbers(void)
 				_putchar(j + '0');
 			} else
 			{
-				_putchar('0' + (j / 10));
-				_putchar('0' + (j % 10));
+				_putchar('0' + (j / 10) * 10 + (j % 10));
 			}
 		}
-		putchar(10);
+		_putchar('\n');
 	}
 }

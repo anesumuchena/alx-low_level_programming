@@ -33,7 +33,8 @@ void print_times_table(int n)
 				_putchar(' ');
 				if (result < 10)
 				{
-					_putchar('  ');
+					_putchar(' ');
+					_putchar(' ');
 				} else
 				{
 					_putchar((result / 10) + '0');
